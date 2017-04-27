@@ -1,0 +1,22 @@
+{
+  "name": "graphiql-01",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8080/",
+  "dependencies": {
+    "graphiql": "^0.10.1",
+    "graphql": "^0.9.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+	"react-autobind":""
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
