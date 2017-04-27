@@ -31,12 +31,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/longshuicy/graphQL-fb-twt.git"
+    "url": ""
   },
   "author": "chenwang.carrie@gmail.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/longshuicy/graphQL-fb-twt/issues"
-  },
-  "homepage": "https://github.com/longshuicy/graphQL-fb-twt#readme"
+  "license": "ISC"
 }
