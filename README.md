@@ -1,0 +1,1 @@
+# custom-graphiql-bind-graphql
