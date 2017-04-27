@@ -1,0 +1,42 @@
+{
+  "name": "graph-ql",
+  "version": "1.0.0",
+  "description": "using graph ql to fetch data from multiple facebook and twitter endpoints",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"cd client && npm start\"",
+	"server":"node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "fb": "^1.1.1",
+    "googleapis": "^19.0.0",
+    "graphql": "^0.9.3",
+    "node-flickr": "^1.0.0",
+    "nodeweibo": "^2.0.4",
+    "promise": "^7.1.1",
+    "snoowrap": "^1.13.0",
+    "spotify-web-api-node": "^2.3.6",
+    "tumblr": "^0.4.1",
+    "tumblr.js": "^1.1.1",
+    "twitter": "^1.7.0",
+    "graphiql": "^0.10.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "react-scripts": "0.9.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longshuicy/graphQL-fb-twt.git"
+  },
+  "author": "chenwang.carrie@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longshuicy/graphQL-fb-twt/issues"
+  },
+  "homepage": "https://github.com/longshuicy/graphQL-fb-twt#readme"
+}
