@@ -1,0 +1,72 @@
+{
+  twitter {
+    queryTweet(q: "tesla", count: 5) {
+      text
+    }
+  }
+  
+  facebook {
+    queryPage(q: "tesla") {
+      name
+      about
+      emails
+    }
+  }
+  
+  flickr {
+    queryPhoto(tags: ["tesla", "elon musk"], per_page: 5) {
+      title
+      info {
+        urls {
+          type
+          _content
+        }
+      }
+    }
+  }
+  
+  reddit{
+    search(query:"tesla"){
+      title      
+    }
+  }
+}
+
+
+-------------------------------------------------------------------------------------------
+
+{
+  twitter {
+    queryTweet(q: "tesla", count: 5) {
+      text
+      user{
+        screen_name
+        location
+        tweets_count
+        friends(count:2){
+          screen_name
+          location
+        }
+      }
+    }
+  }
+}
+
+---------------------------------------------------------------------------------------------
+
+{
+  tumblr{
+    searchPosts(tag:"tesla",limit:2){
+      blog_name
+      tags
+      summary
+      
+      posts(type:"text",fliter:"html",limit:2){
+        ... on tumblrTextPostType{
+          title
+          body
+        }
+      }
+    }
+  }
+}

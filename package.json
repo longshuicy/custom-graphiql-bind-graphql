@@ -1,38 +1,44 @@
 {
-  "name": "graph-ql",
-  "version": "1.0.0",
-  "description": "using graph ql to fetch data from multiple facebook and twitter endpoints",
+  "name": "socialmonitorgraphql",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "start": "concurrently \"npm run server\" \"cd client && npm start\"",
-	"server":"node index.js"
+    "server": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "cors": "^2.8.3",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
     "dotenv": "^4.0.0",
-    "express": "^4.15.2",
-    "express-graphql": "^0.6.4",
-    "fb": "^1.1.1",
-    "googleapis": "^19.0.0",
-    "graphql": "^0.9.3",
-    "node-flickr": "^1.0.0",
-    "nodeweibo": "^2.0.4",
+    "express": "~4.14.1",
+    "express-graphql": "^0.6.3",
+    "form-data": "^2.1.2",
+    "generate-schema": "^2.3.3",
+    "graphql": "^0.9.1",
+    "instagram-node": "^0.5.8",
+    "mongoose": "^4.9.2",
+    "morgan": "~1.7.0",
+    "node-fetch": "^1.6.3",
     "promise": "^7.1.1",
+    "pug": "~2.0.0-beta10",
+    "request": "^2.81.0",
+    "serve-favicon": "~2.3.2",
     "snoowrap": "^1.13.0",
     "spotify-web-api-node": "^2.3.6",
     "tumblr": "^0.4.1",
     "tumblr.js": "^1.1.1",
     "twitter": "^1.7.0",
-    "graphiql": "^0.10.1"
+    "node-flickr": "^1.0.0",
+    "nodeweibo": "^2.0.4",
+    "fb": "^1.1.1",
+    "googleapis": "^19.0.0",
+	"cors": "^2.8.3"
   },
   "devDependencies": {
+    "babel-preset-node6": "^11.0.0",
+    "nodemon": "^1.11.0",
     "concurrently": "^3.4.0",
     "react-scripts": "0.9.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "chenwang.carrie@gmail.com",
-  "license": "ISC"
+  }
 }

@@ -1,0 +1,109 @@
+{
+  "data": {
+    "twitter": {
+      "queryTweet": [
+        {
+          "id": "857381320355455000",
+          "id_str": "857381320355454976",
+          "created_at": "Wed Apr 26 23:50:10 +0000 2017",
+          "text": "FLASHBACK: April 2016\n\nSAVANNAH GUTHRIE: \"Do you believe in raising taxes on the wealthy?\"\n\nTRUMP: \"I do. I do. Inc¡­ https://t.co/WUmuONyNGt",
+          "retweet_count": 9899,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "user": {
+            "id": "32871086",
+            "screen_name": "kylegriffin1"
+          },
+          "retweet": [
+            {
+              "id": "857664930950111200",
+              "text": "RT @kylegriffin1: FLASHBACK: April 2016\n\nSAVANNAH GUTHRIE: \"Do you believe in raising taxes on the wealthy?\"\n\nTRUMP: \"I do. I do. Including¡­"
+            },
+            {
+              "id": "857664629257805800",
+              "text": "RT @kylegriffin1: FLASHBACK: April 2016\n\nSAVANNAH GUTHRIE: \"Do you believe in raising taxes on the wealthy?\"\n\nTRUMP: \"I do. I do. Including¡­"
+            },
+            {
+              "id": "857664360365404200",
+              "text": "RT @kylegriffin1: FLASHBACK: April 2016\n\nSAVANNAH GUTHRIE: \"Do you believe in raising taxes on the wealthy?\"\n\nTRUMP: \"I do. I do. Including¡­"
+            }
+          ]
+        },
+        {
+          "id": "857024593214808000",
+          "id_str": "857024593214808066",
+          "created_at": "Wed Apr 26 00:12:40 +0000 2017",
+          "text": "I say this gently and kindly: If you voted for Trump and still think he's doing a good job, you haven't been paying attention.",
+          "retweet_count": 18754,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "user": {
+            "id": "2233154425",
+            "screen_name": "StephenKing"
+          },
+          "retweet": [
+            {
+              "id": "857664616817717200",
+              "text": "RT @StephenKing: I say this gently and kindly: If you voted for Trump and still think he's doing a good job, you haven't been paying attent¡­"
+            },
+            {
+              "id": "857664300030275600",
+              "text": "RT @StephenKing: I say this gently and kindly: If you voted for Trump and still think he's doing a good job, you haven't been paying attent¡­"
+            }
+          ]
+        },
+        {
+          "id": "857326964419563500",
+          "id_str": "857326964419563524",
+          "created_at": "Wed Apr 26 20:14:11 +0000 2017",
+          "text": "Trump's plan to eliminate the Estate Tax and provide a $4 billion tax break to the Trump family is especially outrageous.",
+          "retweet_count": 9213,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "user": {
+            "id": "29442313",
+            "screen_name": "SenSanders"
+          },
+          "retweet": [
+            {
+              "id": "857664914185482200",
+              "text": "RT @SenSanders: Trump's plan to eliminate the Estate Tax and provide a $4 billion tax break to the Trump family is especially outrageous."
+            },
+            {
+              "id": "857664716164014100",
+              "text": "RT @SenSanders: Trump's plan to eliminate the Estate Tax and provide a $4 billion tax break to the Trump family is especially outrageous."
+            }
+          ]
+        },
+        {
+          "id": "857664871894315000",
+          "id_str": "857664871894315008",
+          "created_at": "Thu Apr 27 18:36:54 +0000 2017",
+          "text": "RT @jonfavs: Not a small lie. Not a depends-on-your-perspective lie. A huge, Trump-like, don't-give-a-shit-what-you-think lie. https://t.co¡­",
+          "retweet_count": 4950,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "user": {
+            "id": "489748924",
+            "screen_name": "CVoelkerding"
+          },
+          "retweet": []
+        },
+        {
+          "id": "857664871495864300",
+          "id_str": "857664871495864321",
+          "created_at": "Thu Apr 27 18:36:54 +0000 2017",
+          "text": "@westieTX @TheMarkRomano They have NEVER meant to support Trump. The GOPe is every bit as repugnant as the Democrat¡­ https://t.co/tmsSGeMfVV",
+          "retweet_count": 0,
+          "in_reply_to_user_id_str": "882784867",
+          "in_reply_to_screen_name": "westieTX",
+          "user": {
+            "id": "1732121486",
+            "screen_name": "hopingforachang"
+          },
+          "retweet": []
+        }
+      ]
+    }
+  }
+}
