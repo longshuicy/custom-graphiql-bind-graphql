@@ -12,12 +12,8 @@ var client = new Twitter({
 function searchUser(args){
 	return new Promise((resolve,reject) =>{
 		client.get('users/search',args,function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
-				resolve(tweets);
-			}
+			if (error) reject(error);
+			resolve(tweets);
 		});
 	})
 }
@@ -25,13 +21,9 @@ function searchUser(args){
 function searchTweet(args){
 	return new Promise((resolve,reject) =>{
 		client.get('search/tweets',args,function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
+			if (error) reject(error);
 			//console.log(tweets);
-				resolve(tweets.statuses);
-			}
+			resolve(tweets.statuses);
 		});
 	})
 }
@@ -39,12 +31,8 @@ function searchTweet(args){
 function searchGeo(args){
 	return new Promise((resolve,reject) =>{
 		client.get('geo/search',args,function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
-				resolve(tweets.result.places);
-			}
+			if (error) reject(error);
+			resolve(tweets.result.places);
 		});
 	})
 }
@@ -54,13 +42,9 @@ function fetchTimeline(user,args){
 	//console.log(args);
 	return new Promise((resolve,reject) =>{
 		client.get('statuses/user_timeline',args,function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
-				//console.log(tweets);
-				resolve(tweets);
-			}
+			if (error) reject(error);
+			//console.log(tweets);
+			resolve(tweets);
 		});
 	})
 }
@@ -68,13 +52,9 @@ function fetchTimeline(user,args){
 function fetchRetweet(tweet,args){
 	return new Promise((resolve,reject) =>{
 		client.get('statuses/retweets/' + tweet.id_str, args, function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
-				//console.log(tweets);
-				resolve(tweets);
-			}
+			if (error) reject(error);
+			//console.log(tweets);
+			resolve(tweets);
 		});
 	})
 }
@@ -83,13 +63,9 @@ function fetchFriend(user,args){
 	args['user_id'] = user.id_str;
 	return new Promise((resolve,reject) =>{
 		client.get('friends/list',args,function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
-				//console.log(tweets);
-				resolve(tweets.users);
-			}
+			if (error) reject(error);
+			//console.log(tweets);
+			resolve(tweets.users);
 		});
 	})
 }
@@ -98,13 +74,9 @@ function fetchFollower(user,args){
 	args['user_id'] = user.id_str;
 	return new Promise((resolve,reject) =>{
 		client.get('followers/list',args,function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
-				//console.log(tweets);
-				resolve(tweets.users);
-			}
+			if (error) reject(error);
+			//console.log(tweets);
+			resolve(tweets.users);
 		});
 	})
 }
@@ -113,13 +85,9 @@ function fetchFollower(user,args){
 	args['user_id'] = user.id_str;
 	return new Promise((resolve,reject) =>{
 		client.get('followers/list',args,function(error,tweets,response){
-			if (error){
-				console.log(error);
-				reject(error);
-			}else{
-				//console.log(tweets);
-				resolve(tweets.users);
-			}
+			if (error) reject(error);
+			//console.log(tweets);
+			resolve(tweets.users);
 		});
 	})
 }

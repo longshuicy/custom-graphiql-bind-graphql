@@ -23,7 +23,7 @@ function youtubeAPI(resolveName, id, args){
 		
 		switch(resolveName){
 			case 'search':
-				//console.log(args)
+				console.log(args)
 				youtube.search.list({
 					part: 				'id,snippet',
 					key: 				config.youtube.api_key,
