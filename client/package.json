@@ -2,7 +2,7 @@
   "name": "graphiql-01",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080/",
+  "proxy": "http://localhost:8080/graphql",
   "dependencies": {
     "graphiql": "^0.10.1",
     "graphql": "^0.9.3",
