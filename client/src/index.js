@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MyGraphiQL from './MyGraphiQL';
 
+var endpoint = "http://" + window.location.hostname + ':8080/graphql';
+console.log(endpoint);
+
 function graphQLFetcher(graphQLParams) {
-  return fetch('window.location.origin'+ '/graphql', {
+  return fetch(endpoint, {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(graphQLParams),
@@ -11,6 +14,6 @@ function graphQLFetcher(graphQLParams) {
 }
 
 ReactDOM.render(
-  <MyGraphiQL fetcher={graphQLFetcher} enpoint={'window.location.origin'+ '/graphql'}/>,
+  <MyGraphiQL fetcher={graphQLFetcher} enpoint={endpoint}/>,
   document.body
 );
