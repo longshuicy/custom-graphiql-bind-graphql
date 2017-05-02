@@ -24,7 +24,7 @@
     },
     data(){
 	return{
-		url:'http://' + window.location.hostname + ':8080/graphql'
+		url:'http://' + window.location.hostname + ':3000/graphql'
 		}
 	},
   }
