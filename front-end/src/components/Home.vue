@@ -8,8 +8,8 @@
           <h2>About Social Universe Observatory</h2>
           <h4>Social Universe Observator is an online platform that helps people collecting social media data. Unlike traditional platforms, which only provides general query, social universe observatory provides data collection from general level to detailed level.</h4>      
           <p>Social - Social Media is the new place people share their lives, feelings, events and etc.</p>
-          <p>Universe - Monitoring multiple social media platforms is more meaningful. Different media sources of the same topic offer more valuable information.</p>
-          <p>Observatory - Raw Social Media data are noisy, meaningless, and unorganized. Organizing and summarizing raw data and provide different levels of observation help people to understand them better.</p>
+          <p>Universe - Monitor multiple social media platforms is more meaningful. Different media sources of the same topic offer more valuable information.</p>
+          <p>Observatory - Raw Social Media data are noisy, meaningless, and unorganized. Organize and summarize raw data, and provide different levels of observation help people to understand them better.</p>
         </div>
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-duplicate logo"></span>

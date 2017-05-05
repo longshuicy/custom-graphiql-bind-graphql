@@ -6,11 +6,11 @@
         <h2 class="form-signin-heading">Please Log In</h2><br>
         <div>
           <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus v-model = "email">
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus v-model = "emailVal">
         </div><br>
         <div>
           <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required v-model = "password">
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required v-model = "passwordVal">
         </div><br>
         <div class="checkbox">
           <label>
@@ -30,8 +30,8 @@
     name: 'login',
     data () {
       return{
-        email: '',
-        password: '',
+        emailVal: '',
+        passwordVal: '',
       }
     },
     methods: {

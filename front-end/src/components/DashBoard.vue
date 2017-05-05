@@ -16,7 +16,7 @@
           <h2> Unauthorized Panel</h2>
         </div>
         <div class="row">
-          <div @click = "fbClick()" v-if = "facebook" class="col-sm-4">
+          <div id = "show-modal" @click = "fbClick()" v-if = "facebook" class="col-sm-4">
             <icon name="facebook-square" scale = '5' color = "#3B5998"></icon>
             <h4>FACEBOOK</h4>
           </div>
@@ -66,12 +66,13 @@
           </div>
         </div>
       </div>
+      
       <div class="col-sm-4 col-sm-offset-2">
         <div>
           <h2> Authorized Panel </h2>
         </div>
         <div class="row">
-          <div @click = "fbClick()" v-if = "!facebook" class="col-sm-4">
+          <div id = "show-logoutmodal" @click = "afbClick()" v-if = "!facebook" class="col-sm-4">
             <icon name="facebook-square" scale = '5' color = "#3B5998"></icon>
             <h4>FACEBOOK</h4>
           </div>
@@ -122,14 +123,35 @@
         </div>
       </div>
     </div>
+
+    <modal v-if="showModal" @close="showModal = false" class = "col-sm-12">
+            <!--
+              you can use custom content here to overwrite
+              default content
+            -->
+    </modal>
+    <logoutmodal v-if="showLogoutModal" @close="showLogoutModal = false" class = "col-sm-12">
+            <!--
+              you can use custom content here to overwrite
+              default content
+            -->
+    </logoutmodal>
   </div>
 </template>
 
 <script>
   import { mapState } from 'vuex';
+  import Modal from './Modal';
+  import logoutModal from './logoutModal';
 
   export default {
     name: 'dashboard',
+    data () {
+      return{
+        showModal: false,
+        showLogoutModal: false,
+      }
+    },
     computed: mapState({
       facebook: state=>state.facebook,
       twitter: state=>state.twitter,
@@ -147,7 +169,11 @@
     }),
     methods: {
       fbClick() {
-        alert("Clicking the button will pop up a facebook login window. We will integrate this function into our system soon.")
+        this.showModal = true
+        this.$store.commit('switchSoicalState', 'facebook');
+      },
+      afbClick() {
+        this.showLogoutModal = true
         this.$store.commit('switchSoicalState', 'facebook');
       },
       twClick() {
@@ -183,6 +209,10 @@
       tumblrClick() {
         this.$store.commit('switchSoicalState', 'tumblr');
       },
+    },
+    components: {
+      'modal' : Modal,
+      'logoutmodal' : logoutModal,
     }
   }
 </script>
